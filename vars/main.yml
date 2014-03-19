@@ -6,9 +6,9 @@ phergie_connections:
   - {
     host: 'irc.freenode.net',
     port: '6667',
-    username: 'PhergieExampleBot',
+    username: 'PhergieExample',
     realname: 'Phergie Example Bot',
-    nick: 'PhergieExampleBot'
+    nick: 'PhergieExample'
   }
 phergie_autojoin_channels:
   - '#example'

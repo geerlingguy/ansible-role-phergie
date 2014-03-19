@@ -27,9 +27,9 @@ The timezone Phergie will use when performing date-based actions.
       - {
         host: 'irc.freenode.net',
         port: '6667',
-        username: 'PhergieExampleBot',
+        username: 'PhergieExample',
         realname: 'Phergie Example Bot',
-        nick: 'PhergieExampleBot'
+        nick: 'PhergieExample'
       }
 
 A list of connection objects; Phergie can connect to multiple IRC hosts, but typically one connection will suffice.

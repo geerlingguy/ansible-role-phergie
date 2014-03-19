@@ -15,6 +15,13 @@
     dest={{ phergie_install_path }}
     update=no
 
+- name: Update permissions on phergie clone.
+  file: >
+    path={{ phergie_install_path }}
+    owner={{ phergie_user }}
+    group={{ phergie_user }}
+    recurse=yes
+
 # Copy Phergie config into place.
 - name: Copy Phergie Settings.php into place.
   template: >
