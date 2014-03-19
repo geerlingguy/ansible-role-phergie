@@ -1,0 +1,25 @@
+---
+# Install Phergie.
+# To start Phergie, run `php [phergie_install_path]/phergie.php`
+- name: Create Phergie config folder.
+  file: >
+    path={{ phergie_install_path }}
+    state=directory
+    owner={{ phergie_user }}
+    group={{ phergie_user }}
+    mode=755
+
+- name: Clone Phergie Git repository.
+  git: >
+    repo=https://github.com/phergie/phergie.git
+    dest={{ phergie_install_path }}
+    update=no
+
+# Copy Phergie config into place.
+- name: Copy Phergie Settings.php into place.
+  template: >
+    src=Settings.php.j2
+    dest={{ phergie_install_path }}/Settings.php
+    owner={{ phergie_user }}
+    group={{ phergie_user }}
+    mode=644

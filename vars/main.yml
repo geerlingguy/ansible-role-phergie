@@ -1,0 +1,34 @@
+---
+phergie_install_path: /home/geerlingguy/phergie
+phergie_user: geerlingguy
+phergie_timezone: America/Chicago
+phergie_connections:
+  - {
+    host: 'irc.freenode.net',
+    port: '6667',
+    username: 'PhergieExampleBot',
+    realname: 'Phergie Example Bot',
+    nick: 'PhergieExampleBot'
+  }
+phergie_autojoin_channels:
+  - '#example'
+phergie_altnicks: []
+phergie_ui_enabled: 'true'
+phergie_command_prefix: ''
+phergie_plugins:
+  - AltNick
+  - AutoJoin
+  - Beer
+  - Help
+  - Karma
+  - Lart
+  - Php
+  - Ping
+  - PingPong
+  - Pong
+  - Prioritize
+  - Quit
+  - Remind
+  - Serve
+phergie_wunderground_api_key: ''
+phergie_karma_db_location: ''
