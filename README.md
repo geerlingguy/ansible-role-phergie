@@ -1,5 +1,7 @@
 # Ansible Role: Phergie PHP IRC Bot
 
+[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-phergie.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-phergie)
+
 Installs Phergie, a PHP IRC bot on RHEL/CentOS and Debian/Ubuntu Linux systems.
 
 To use Phergie, you can run `php phergie.php` from the directory in which Phergie is installed (set this with the `phergie_install_path` variable). You might want to run phergie in the background, and log output so you can check for any problems and store chat history with a command like:
