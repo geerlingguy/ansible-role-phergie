@@ -8,14 +8,15 @@ To use Phergie, you can run `php phergie.php` from the directory in which Phergi
 
 ## Requirements
 
-PHP should be installed on your system if you want to run Phergie. At least `php`, `php-pdo` and `php-sqlite`. Git is also required, as listed in the dependencies below.
+  - Git (recommended role: `geerlingguy.git`).
+  - PHP (recommended role: `geerlingguy.php`) - `php`, `php-pdo`, and `php-sqlite` are recommended.
 
 ## Role Variables
 
 Available variables are listed below, along with default values (see `vars/main.yml`):
 
-    phergie_install_path: /home/geerlingguy/phergie
-    phergie_user: geerlingguy
+    phergie_install_path: "/home/{{ ansible_ssh_user }}/phergie"
+    phergie_user: "{{ ansible_ssh_user }}"
 
 The location where Phergie will be installed, and the user with which Phergie will be installed and most likely run.
 
@@ -79,19 +80,26 @@ A path to an SQLite database which Phergie will use if `Karma` is in `phergie_pl
 
 ## Dependencies
 
-  - geerlingguy.git (Installs Git).
+  - `geerlingguy.git`
 
 ## Example Playbook
 
-    - hosts: servers
+    - hosts: ircbot
       vars_files:
         - vars/main.yml
       roles:
-        - { role: geerlingguy.phergie }
+        - geerlingguy.phergie
 
 *Inside `vars/main.yml`*:
 
-    TODO
+    phergie_connections:
+      - {
+        host: 'irc.freenode.net',
+        port: '6667',
+        username: 'PhergieExample',
+        realname: 'Phergie Example Bot',
+        nick: 'PhergieExample'
+      }
 
 ## License
 

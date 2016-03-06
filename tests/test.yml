@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  remote_user: root
+
+  vars: []
+
+  roles:
+    - geerlingguy.git
+    - geerlingguy.php
+    - ansible-role-phergie

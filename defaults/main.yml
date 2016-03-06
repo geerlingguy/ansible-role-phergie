@@ -1,6 +1,6 @@
 ---
-phergie_install_path: /home/geerlingguy/phergie
-phergie_user: geerlingguy
+phergie_install_path: "/home/{{ ansible_ssh_user }}/phergie"
+phergie_user: "{{ ansible_ssh_user }}"
 phergie_timezone: America/Chicago
 phergie_connections:
   - {
