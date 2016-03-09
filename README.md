@@ -15,7 +15,7 @@ To use Phergie, you can run `php phergie.php` from the directory in which Phergi
 
 ## Role Variables
 
-Available variables are listed below, along with default values (see `vars/main.yml`):
+Available variables are listed below, along with default values (see `defaults/main.yml`):
 
     phergie_install_path: "/home/{{ ansible_ssh_user }}/phergie"
     phergie_user: "{{ ansible_ssh_user }}"
