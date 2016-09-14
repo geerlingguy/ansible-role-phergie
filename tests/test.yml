@@ -1,6 +1,5 @@
 ---
-- hosts: localhost
-  remote_user: root
+- hosts: all
 
   vars:
     php_enable_webserver: false
@@ -8,4 +7,4 @@
   roles:
     - geerlingguy.git
     - geerlingguy.php
-    - ansible-role-phergie
+    - role_under_test
