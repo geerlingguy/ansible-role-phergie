@@ -1,7 +1,9 @@
 ---
+phergie_version: master
 phergie_install_path: "/home/{{ ansible_ssh_user }}/phergie"
 phergie_user: "{{ ansible_ssh_user }}"
 phergie_timezone: America/Chicago
+
 phergie_connections:
   - {
     host: 'irc.freenode.net',
@@ -13,8 +15,11 @@ phergie_connections:
 phergie_autojoin_channels:
   - '#example'
 phergie_altnicks: []
+
 phergie_ui_enabled: 'true'
+
 phergie_command_prefix: ''
+
 phergie_plugins:
   - AltNick
   - AutoJoin
@@ -30,5 +35,6 @@ phergie_plugins:
   - Quit
   - Remind
   - Serve
+
 phergie_wunderground_api_key: ''
 phergie_karma_db_location: ''

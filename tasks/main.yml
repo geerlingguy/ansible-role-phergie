@@ -13,6 +13,7 @@
   git:
     repo: https://github.com/phergie/phergie.git
     dest: "{{ phergie_install_path }}"
+    version: "{{ phergie_version }}"
     update: false
 
 - name: Update permissions on phergie clone.
