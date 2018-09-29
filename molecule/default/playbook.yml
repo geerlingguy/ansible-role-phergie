@@ -1,0 +1,12 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+
+  vars:
+    php_enable_webserver: false
+
+  roles:
+    - geerlingguy.git
+    - geerlingguy.php
+    - geerlingguy.phergie
