@@ -5,6 +5,8 @@
 
   vars:
     php_enable_webserver: false
+    phergie_user: root
+    phergie_install_path: /root/phergie
 
   roles:
     - geerlingguy.git
