@@ -1,6 +1,8 @@
-# Ansible Role: Phergie PHP IRC Bot
+# DEPRECATED - Ansible Role: Phergie PHP IRC Bot
 
 [![Build Status](https://travis-ci.org/geerlingguy/ansible-role-phergie.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-phergie)
+
+> **DEPRECATED**: This role has been deprecated, as geerlingguy no longer uses Phergie and will not continue maintaining the role.
 
 Installs Phergie, a PHP IRC bot on RHEL/CentOS and Debian/Ubuntu Linux systems.
 
